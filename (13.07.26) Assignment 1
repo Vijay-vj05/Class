@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA STORES</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#000000,#2c2c2c);
+            min-height:100vh;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:#ffffff;
+            margin-bottom:35px;
+            font-size:42px;
+            text-transform:uppercase;
+            letter-spacing:2px;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#ffffff;
+            border-radius:20px;
+            overflow:hidden;
+            position:relative;
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+            transition:0.4s ease;
+        }
+
+        .card:hover{
+            transform:translateY(-12px);
+            box-shadow:0 15px 30px rgba(255,0,0,0.3);
+        }
+
+        .card::before{
+            content:"SALE";
+            position:absolute;
+            top:15px;
+            left:15px;
+            background:#ff0000;
+            color:#fff;
+            padding:6px 14px;
+            border-radius:20px;
+            font-size:12px;
+            font-weight:bold;
+            z-index:1;
+        }
+
+        .image-box{
+            overflow:hidden;
+        }
+
+        .image-box img{
+            width:100%;
+            height:240px;
+            object-fit:cover;
+            transition:0.5s ease;
+        }
+
+        .card:hover img{
+            transform:scale(1.12);
+        }
+
+        .content{
+            padding:20px;
+        }
+
+        .content h3{
+            font-size:22px;
+            color:#111;
+            margin-bottom:10px;
+        }
+
+        .price{
+            color:#16a34a;
+            font-size:24px;
+            font-weight:bold;
+            margin:10px 0;
+        }
+
+        .discount{
+            display:inline-block;
+            background:#ff0000;
+            color:white;
+            padding:6px 14px;
+            border-radius:20px;
+            font-size:13px;
+            font-weight:bold;
+        }
+
+        button{
+            width:100%;
+            margin-top:15px;
+            padding:12px;
+            border:none;
+            border-radius:10px;
+            background:#000000;
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#ff0000;
+            transform:scale(1.05);
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size:32px;
+            }
+
+            .container{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PUMA STORES</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="PUMA Velocity Nitro">
+            </div>
+            <div class="content">
+                <h3>PUMA Velocity Nitro</h3>
+                <p class="price">₹4,999</p>
+                <span class="discount">40% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=500" alt="PUMA Smash V2">
+            </div>
+            <div class="content">
+                <h3>PUMA Smash V2</h3>
+                <p class="price">₹3,499</p>
+                <span class="discount">35% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500" alt="PUMA RS-X">
+            </div>
+            <div class="content">
+                <h3>PUMA RS-X</h3>
+                <p class="price">₹5,999</p>
+                <span class="discount">30% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500" alt="PUMA Flyer Runner">
+            </div>
+            <div class="content">
+                <h3>PUMA Flyer Runner</h3>
+                <p class="price">₹2,999</p>
+                <span class="discount">45% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500" alt="PUMA Softride Enzo">
+            </div>
+            <div class="content">
+                <h3>PUMA Softride Enzo</h3>
+                <p class="price">₹4,299</p>
+                <span class="discount">25% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="images.jpg" alt="PUMA Deviate Nitro">
+            </div>
+            <div class="content">
+                <h3>PUMA Deviate Nitro</h3>
+                <p class="price">₹7,499</p>
+                <span class="discount">50% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="Speedcat-Plus-Sneakers.avif" alt="PUMA SpeedCat">
+            </div>
+            <div class="content">
+                <h3>PUMA SpeedCat</h3>
+                <p class="price">₹3,499</p>
+                <span class="discount">50% OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
