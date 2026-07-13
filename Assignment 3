@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Card</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .card{
+            width:350px;
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            margin:20px; /* Margin */
+            position:relative;
+            transition:0.3s;
+        }
+
+        .card::before{
+            content:"Top Destination";
+            position:absolute;
+            top:10px;
+            left:10px;
+            background:#ff5722;
+            color:white;
+            padding:5px 10px;
+            border-radius:5px;
+            font-size:12px;
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px; /* Padding */
+        }
+
+        .card h2{
+            margin-bottom:10px;
+            color:#333;
+        }
+
+        .card p{
+            color:#666;
+            margin-bottom:15px;
+        }
+
+        .visit-btn{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:8px; /* Border Radius */
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .visit-btn:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Travel Destination">
+
+        <div class="card-content">
+            <h2>Maldives</h2>
+            <p>
+                Experience crystal-clear waters, white sandy beaches,
+                and luxurious resorts in the beautiful Maldives.
+            </p>
+
+            <button class="visit-btn">Visit</button>
+        </div>
+    </div>
+
+</body>
+</html>
