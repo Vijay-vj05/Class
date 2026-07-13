@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: square;
+            text-align: left;
+            display: inline-block;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vijay T</h1>
+
+        <img src="profile.jpg" alt="My Photo" class="profile-img">
+
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Vijay. I am currently pursuing MCA at
+            Rathinam Technical Campus. I am interested in Cloud Computing,
+            Python Programming, and Web Development. I enjoy learning new
+            technologies and improving my technical skills.
+        </p>
+
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Playing Games</li>
+            <li>Learning New Technologies</li>
+            <li>Watching Tech Videos</li>
+            <li>Practicing English</li>
+        </ul>
+    </div>
+
+</body>
+</html>
